@@ -1,0 +1,136 @@
+input[type='number']
+	-moz-appearance: textfield;
+input[type='submit']
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	appearance: none; 
+input::-webkit-clear-button,
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button 
+	-webkit-appearance: none;
+input[type="password"]
+	font: small-caption
+	line-height: 1.65
+input
+	box-shadow : none
+	font-family: $o
+	+rem(font-size,16px)
+	+placeholder 
+		font-family: $o
+	&::-ms-clear
+		display: none;
+svg
+	display: inline-block
+	max-width: 100%
+	max-height: 100%
+button
+	background: 0 0
+a
+	text-decoration: none
+	
+	// color: $active
+	&:not([class]):hover
+		// color: $white
+		transition: color .3s
+*
+	+box
+	-webkit-tap-highlight-color: transparent
+	+placeholder 
+		font-family: $o
+		+rem(font-size,16px)
+
+textarea
+	resize: none
+
+	+placeholder 
+		font-family: $o
+		+rem(font-size,14px)
+ul
+	li>a 
+		display: inline-block
+		width: 100%
+html
+	font-size: 16px
+	line-height: 1
+	overflow-x: hidden
+	// +r(1150)
+	// 	font-size: 15px
+
+img
+	display: block
+	max-width: 100%
+body
+	background-color: #fff
+	+box
+	+font-smoothing
+	text-rendering: optimizeLegibility
+	font-family: $o
+	min-width: 320px
+	-webkit-overflow-scrolling: touch;
+	& ::selection
+		background-color: rgba(19, 98, 226, 0.61);
+		color: $white
+	& ::-moz-selection
+		background-color: rgba(19, 98, 226, 0.61);
+		color: $white
+	&.menu-open
+		+r(915)
+			position: fixed
+		
+html,body, .out
+	width: 100%
+	height: 100%
+	&.modal_open
+		position: fixed
+.out
+	position: relative
+.page__header--wrap
+	position: fixed
+	left: 0
+	width: 100%
+	right: 0
+	top: 0
+	z-index: 20
+	visibility: hidden
+	// transform: translateX(0)
+	height: 110px
+
+
+.block-slider-outer
+	h2 
+		text-align: center
+		margin-bottom: 40px
+		padding-top: 50px	
+	display: block
+	max-width: 900px
+	margin: 0 auto
+	position: relative
+	.jcarousel4-catalog-control-prev,.jcarousel4-catalog-control-next
+		background-repeat: no-repeat !important
+		background-position: center !important
+		top: 56%;
+	.jcarousel4-catalog-control-prev
+		transform: scale(-1,1)
+	.block-slider
+
+		.cat_round2
+			li 
+				height: 180px
+				width: 152px
+				margin: 0 25px
+			figure
+				width: 100px
+				height: 100px
+				border: 2px #d8d8d8 solid;
+			span
+				font-weight: 600
+				text-decoration: underline
+		a:hover
+			figure
+				border: 2px #a6ce39 solid;
+			span
+				text-decoration: none
+				
+
+
+
